@@ -1,0 +1,69 @@
+site_name: compodoc文档
+site_description: compodoc文档
+site_author: Nosy
+copyright: '版权 &copy; 2017 - 2018 wohugb.github.io'
+
+repo_name: wohugb/compodoc-docs
+repo_url: https://github.com/wohugb/compodoc-docs
+edit_uri: ""
+
+theme:
+  name: material
+
+  include_search_page: false
+  search_index_only: true
+
+  language: zh
+  feature:
+    tabs: true
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  logo:
+    icon: "\uE80C"
+  extra_css: [assets/stylesheets/extra.css]
+extra:
+  search:
+    language: 'jp'
+  social:
+    - type: globe
+      link: http://wohugb.github.io
+    - type: github-alt
+      link: https://github.com/wohugb
+    - type: twitter
+      link: https://twitter.com/wohugb
+    - type: linkedin
+      link: https://linkedin.com/in/wohugb
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+pages:
+  - 主页: index.md
+  - 入门: GETTING-STARTED.md
+  - 特征: FEATURES.md
+  - 演示: DEMO.md
+  - 安装: INSTALLATION.md
+  - 教程: TUTORIAL.md
+  - 用法: USAGE.md
+  - 主题: THEMES.md
+  - 注释: COMMENTS.md
+  - jsdoc标签: JSDOC-TAGS.md
+  - 路由: ROUTING.md
+  - 文件覆盖面: DOCUMENTATION-COVERAGE.md
+  - 技巧和窍门: TIPS-AND-TRICKS.md
+  - 扩展: EXTENSIONS.md
+  - 杂: MISCELLANEOUS.md
+  - 现场示例选项卡: LIVE-EXAMPLE-TAB.md

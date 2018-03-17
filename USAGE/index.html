@@ -1,0 +1,923 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="compodoc文档">
+      
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.0">
+    
+    
+      
+        <title>用法 - compodoc文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.78aab2dc.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="compodoc文档" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                compodoc文档
+              </span>
+              <span class="md-header-nav__topic">
+                用法
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/wohugb/compodoc-docs" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wohugb/compodoc-docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="主页" class="md-tabs__link md-tabs__link--active">
+        主页
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    compodoc文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/wohugb/compodoc-docs" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wohugb/compodoc-docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="主页" class="md-nav__link">
+      主页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../GETTING-STARTED/" title="入门" class="md-nav__link">
+      入门
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../FEATURES/" title="特征" class="md-nav__link">
+      特征
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../DEMO/" title="演示" class="md-nav__link">
+      演示
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../INSTALLATION/" title="安装" class="md-nav__link">
+      安装
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../TUTORIAL/" title="教程" class="md-nav__link">
+      教程
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        用法
+      </label>
+    
+    <a href="./" title="用法" class="md-nav__link md-nav__link--active">
+      用法
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="选项" class="md-nav__link">
+    选项
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows" title="选项，报价和Windows使用情况" class="md-nav__link">
+    选项，报价和Windows使用情况
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="渲染文档" class="md-nav__link">
+    渲染文档
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="在提供源文件夹的同时呈现文档" class="md-nav__link">
+    在提供源文件夹的同时呈现文档
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compodoc" title="用compodoc生成文档" class="md-nav__link">
+    用compodoc生成文档
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compodoc_1" title="渲染文档，并将其与compodoc一起提供" class="md-nav__link">
+    渲染文档，并将其与compodoc一起提供
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../THEMES/" title="主题" class="md-nav__link">
+      主题
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../COMMENTS/" title="注释" class="md-nav__link">
+      注释
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../JSDOC-TAGS/" title="jsdoc标签" class="md-nav__link">
+      jsdoc标签
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ROUTING/" title="路由" class="md-nav__link">
+      路由
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../DOCUMENTATION-COVERAGE/" title="文件覆盖面" class="md-nav__link">
+      文件覆盖面
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../TIPS-AND-TRICKS/" title="技巧和窍门" class="md-nav__link">
+      技巧和窍门
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../EXTENSIONS/" title="扩展" class="md-nav__link">
+      扩展
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../MISCELLANEOUS/" title="杂" class="md-nav__link">
+      杂
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../LIVE-EXAMPLE-TAB/" title="现场示例选项卡" class="md-nav__link">
+      现场示例选项卡
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="选项" class="md-nav__link">
+    选项
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows" title="选项，报价和Windows使用情况" class="md-nav__link">
+    选项，报价和Windows使用情况
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="渲染文档" class="md-nav__link">
+    渲染文档
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="在提供源文件夹的同时呈现文档" class="md-nav__link">
+    在提供源文件夹的同时呈现文档
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compodoc" title="用compodoc生成文档" class="md-nav__link">
+    用compodoc生成文档
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compodoc_1" title="渲染文档，并将其与compodoc一起提供" class="md-nav__link">
+    渲染文档，并将其与compodoc一起提供
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">用法<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="codehilite"><pre><span></span>compodoc &lt;src&gt; <span class="o">[</span>options<span class="o">]</span>
+</pre></div>
+
+<h2 id="_2">选项<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-h, --help</td>
+<td>输出使用信息</td>
+</tr>
+<tr>
+<td>-V, --version</td>
+<td>输出版本号</td>
+</tr>
+<tr>
+<td>-p, --tsconfig [config]</td>
+<td>一个tsconfig.json文件</td>
+</tr>
+<tr>
+<td>-d, --output [folder]</td>
+<td>在哪里存储生成的文档</td>
+</tr>
+<tr>
+<td>-y, --extTheme [file]</td>
+<td>外部造型主题</td>
+</tr>
+<tr>
+<td>-n, --name [name]</td>
+<td>文档的标题</td>
+</tr>
+<tr>
+<td>-a, --assetsFolder [folder]</td>
+<td>外部资产文件夹复制到生成的文档文件夹中</td>
+</tr>
+<tr>
+<td>-o, --open</td>
+<td>打开生成的文档</td>
+</tr>
+<tr>
+<td>-t, --silent</td>
+<td>在静默模式下，日志消息不会记录在控制台中</td>
+</tr>
+<tr>
+<td>-s, --serve</td>
+<td>服务生成的文档(默认 http://localhost:8080/)</td>
+</tr>
+<tr>
+<td>-r, --port [port]</td>
+<td>更改默认的服务端口</td>
+</tr>
+<tr>
+<td>-w, --watch</td>
+<td>在服务之后观看源文件并强制重建文档</td>
+</tr>
+<tr>
+<td>-e, --exportFormat [format]</td>
+<td>以指定格式导出 (json, html (默认))</td>
+</tr>
+<tr>
+<td>--theme [theme]</td>
+<td>选择一个可用主题，默认为'gitbook' (laravel, original, material, postmark, readthedocs, stripe, vagrant)</td>
+</tr>
+<tr>
+<td>--hideGenerator</td>
+<td>不要在页面底部打印Compodoc徽标</td>
+</tr>
+<tr>
+<td>--toggleMenuItems</td>
+<td>默认关闭菜单中的项目（默认['all']）值 : ['all'] 或其中之一['modules','components','directives','classes','injectables','interfaces','pipes','additionalPages'])</td>
+</tr>
+<tr>
+<td>--includes [path]</td>
+<td>包含外部降价文件的路径</td>
+</tr>
+<tr>
+<td>--includesName [name]</td>
+<td>外部md文件的项目菜单的名称 ( 默认 "Additional documentation")</td>
+</tr>
+<tr>
+<td>--coverageTest</td>
+<td>用阈值测试文档覆盖命令（默认 70)</td>
+</tr>
+<tr>
+<td>--coverageMinimumPerFile [minimum]</td>
+<td>至少测试每个文件的文档覆盖率命令 ( 默认 0)</td>
+</tr>
+<tr>
+<td>--coverageTestThresholdFail [boolean]</td>
+<td>文档覆盖率的测试命令（全局文件或每个文件）将失败并出现错误，或者只是警告用户 (true: error, false: warn) ( 默认: true)</td>
+</tr>
+<tr>
+<td>--disableSourceCode</td>
+<td>不要添加源代码标签和链接到源代码</td>
+</tr>
+<tr>
+<td>--disableGraph</td>
+<td>禁用依赖关系图的呈现</td>
+</tr>
+<tr>
+<td>--disableCoverage</td>
+<td>不要添加文档覆盖率报告</td>
+</tr>
+<tr>
+<td>--disablePrivate</td>
+<td>不要在生成的文档中显示私密文件</td>
+</tr>
+<tr>
+<td>--disableProtected</td>
+<td>不要在生成的文档中显示保护</td>
+</tr>
+<tr>
+<td>--disableInternal</td>
+<td>不要在生成的文档中显示@internal</td>
+</tr>
+<tr>
+<td>--disableLifeCycleHooks</td>
+<td>不要在生成的文档中显示Angular生命周期钩子</td>
+</tr>
+<tr>
+<td>--disableRoutesGraph</td>
+<td>不要添加路线图</td>
+</tr>
+<tr>
+<td>--customFavicon [path]</td>
+<td>使用自定义图标</td>
+</tr>
+<tr>
+<td>--gaID [id] Google</td>
+<td>Google Analytics跟踪ID</td>
+</tr>
+<tr>
+<td>--gaSite [site]</td>
+<td>Google Analytics网站名称（默认自动（默认：auto）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="windows">选项，报价和Windows使用情况<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h2>
+<p>请记住，使用带有多个单词的选项需要在句子周围引用引号。</p>
+<div class="codehilite"><pre><span></span>compodoc -p src/tsconfig.json -n <span class="s1">&#39;My app documentation&#39;</span>
+</pre></div>
+
+<p>使用npm脚本，该命令托管在package.json文件中。
+不要忘记用Windows系统的双引号进行转义。</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+   <span class="err">...</span>
+   <span class="nt">&quot;doc&quot;</span><span class="p">:</span> <span class="s2">&quot;./node_modules/.bin/compodoc -p src/tsconfig.app.json -n \&quot;My app documentation\&quot;&quot;</span>
+   <span class="err">...</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2 id="_3">渲染文档<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>文档在默认输出文件夹中生成，然后在该文件夹中运行HTTP服务器。</p>
+<div class="codehilite"><pre><span></span>compodoc -p src/tsconfig.json
+</pre></div>
+
+<h2 id="_4">在提供源文件夹的同时呈现文档<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>compodoc src -p src/tsconfig.json
+</pre></div>
+
+<h2 id="compodoc">用compodoc生成文档<a class="headerlink" href="#compodoc" title="Permanent link">&para;</a></h2>
+<p>文档是在默认输出文件夹或特定文件夹中生成的，
+本地HTTP服务器启动于http://localhost:8080</p>
+<div class="codehilite"><pre><span></span>compodoc -s
+<span class="c1"># 要么</span>
+compodoc -s -d ./doc
+</pre></div>
+
+<h2 id="compodoc_1">渲染文档，并将其与compodoc一起提供<a class="headerlink" href="#compodoc_1" title="Permanent link">&para;</a></h2>
+<p>文档在默认输出文件夹中生成，
+和一个本地HTTP服务器可在 http://localhost:8080</p>
+<div class="codehilite"><pre><span></span>compodoc -p src/tsconfig.json -s
+</pre></div>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../TUTORIAL/" title="教程" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  后退
+                </span>
+                教程
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../THEMES/" title="主题" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                主题
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            版权 &copy; 2017 - 2018 wohugb.github.io
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.8eb9be28.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.jp.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
